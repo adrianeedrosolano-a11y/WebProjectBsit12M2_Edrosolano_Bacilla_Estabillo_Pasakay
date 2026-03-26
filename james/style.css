@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+    animation: bgChange 10s infinite alternate;
+}
+
+/* BACKGROUND ANIMATION */
+@keyframes bgChange {
+    0% { background: #000; }
+    50% { background: #111; }
+    100% { background: #1a0000; }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.logo {
+    color: red;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* MAIN SECTION */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    gap: 50px;
+}
+
+/* IMAGE */
+.image img {
+    width: 250px;
+    border-radius: 50%;
+    border: 5px solid red;
+}
+
+/* TEXT */
+.content h1 span {
+    color: red;
+}
+
+.content h3 span {
+    color: red;
+}
+
+/* SOCIAL */
+.social a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 50%;
+    color: white;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    background: red;
+}
+
+/* BUTTON */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: darkred;
+}
+/* PAGE LAYOUT */
+.page {
+    padding: 80px 10%;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* TITLE ANIMATION */
+.page h1 {
+    font-size: 40px;
+    color: red;
+    margin-bottom: 40px;
+    animation: fadeInDown 1s ease;
+}
+
+/* GRID CARDS */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* CARD DESIGN */
+.card {
+    width: 250px;
+    padding: 25px;
+    background: #111;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+    animation: fadeInUp 1s ease;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+    border-color: red;
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 25px red;
+}
+
+/* TEXT */
+.card h3 {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+/* CONTACT FORM */
+form {
+    animation: fadeInUp 1s ease;
+}
+
+input, textarea {
+    width: 300px;
+    padding: 12px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px 25px;
+    background: red;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: darkred;
+    box-shadow: 0 0 15px red;
+}
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
